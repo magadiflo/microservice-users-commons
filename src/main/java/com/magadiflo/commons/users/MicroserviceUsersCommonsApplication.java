@@ -1,4 +1,4 @@
-package com.magadiflo.users.commons;
+package com.magadiflo.commons.users;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

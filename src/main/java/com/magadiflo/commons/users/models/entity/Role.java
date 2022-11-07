@@ -1,4 +1,4 @@
-package com.magadiflo.users.commons.models.entity;
+package com.magadiflo.commons.users.models.entity;
 
 import java.io.Serializable;
 
