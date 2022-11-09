@@ -38,6 +38,8 @@ public class User implements Serializable {
 
 	@Column(unique = true)
 	private String email;
+	
+	private Integer attempts;
 
 	@ManyToMany
 	@JoinTable(name = "users_roles", 
@@ -110,6 +112,14 @@ public class User implements Serializable {
 		this.roles = roles;
 	}
 
+	public Integer getAttempts() {
+		return attempts;
+	}
+
+	public void setAttempts(Integer attempts) {
+		this.attempts = attempts;
+	}
+
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
@@ -127,6 +137,8 @@ public class User implements Serializable {
 		builder.append(lastName);
 		builder.append(", email=");
 		builder.append(email);
+		builder.append(", attempts=");
+		builder.append(attempts);
 		builder.append("]");
 		return builder.toString();
 	}
